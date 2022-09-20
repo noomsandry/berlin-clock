@@ -1,0 +1,25 @@
+
+.row{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+p{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+.bg-black{
+    background: #000;
+}
+
+.bg-red{
+    background: rgb(255, 0, 0);
+}
+
+.bg-yellow{
+    background: rgb(255, 196, 0);
+}
