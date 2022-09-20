@@ -1,4 +1,9 @@
 
+// eslint-disable-next-line no-extend-native
+String.prototype.replaceAt = function(index, replacement) {
+    return this.substring(0, index) + replacement + this.substring(index + replacement.length);
+  }
+
 /**
  * Extract date hours, minutes, seconds
  * 
@@ -7,7 +12,7 @@
  */
 function parseDate(date){
     return {
-        hours: date.getHours(), minutes: date.getMinutes(), seconds: date.getSeconds()
+        hours: date.getUTCHours(), minutes: date.getUTCMinutes(), seconds: date.getUTCSeconds()
     }
 }
 
